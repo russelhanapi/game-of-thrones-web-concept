@@ -77,7 +77,7 @@ section {
 /* ╚═══════════════════════════════════════╝  */
 .section-hero {
   min-height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/russelhanapi/game-of-thrones-web-concept/3fe19e0784578e0cd0bccf47e37fa04c953fa7ab/images/hero-bg.svg);
+  background-image: url(images/hero-bg.svg);
   background-size: cover;
   background-position: center;
   justify-content: flex-end;
@@ -101,7 +101,7 @@ section {
 /* ╚═══════════════════════════════════════╝  */
 .section-awards {
   min-height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/russelhanapi/game-of-thrones-web-concept/3fe19e0784578e0cd0bccf47e37fa04c953fa7ab/images/section-awards-bg.svg);
+  background-image: url(images/section-awards-bg.svg);
   background-size: cover;
 }
 
@@ -177,7 +177,7 @@ section {
 /* ╚═══════════════════════════════════════╝  */
 .section-outro {
   min-height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/russelhanapi/game-of-thrones-web-concept/3fe19e0784578e0cd0bccf47e37fa04c953fa7ab/images/section-outro-bg.svg);
+  background-image: url(images/section-outro-bg.svg);
   background-size: cover;
 }
 
