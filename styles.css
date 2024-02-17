@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: #cdc2f7 solid 0.5px; */
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #004643;
+    color: #abd1c6;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  section {
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scrollable-area {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrollable-area::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+
+  .scrollable-area.scrollable-synopsis::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: rgb(171, 209, 198, 0.36);
+  }
+
+  .scrollable-area::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: rgba(171, 209, 198, 0);
+  }
+
+  .scrollable-area::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+    background: linear-gradient(
+      0deg,
+      #004643 0%,
+      #fffffe 50%,
+      #004643 100%
+    );
+  }
+
+  .secondary-heading {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .secondary-heading--big {
+    font-size: 4.4rem;
+    color: #fffffe;
+    margin-bottom: 0.8rem;
+  }
+
+  .secondary-heading--small {
+    font-size: 4rem;
+    color: #001e1d;
+    letter-spacing: 11%;
+    margin-bottom: 7.1rem;
+    text-align: center;
+  }
+  /*  ╔═══════════════════════════════════════╗ */
+  /*    HERO                                    */
+  /* ╚═══════════════════════════════════════╝  */
+  .section-hero {
+    min-height: 100vh;
+    background-image: url(https://drive.google.com/uc?export=view&id=1pp6zvxZ9iw8p9-tTeJETuoKAuCRw6bY6);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+  }
+
+  .logo-container {
+    max-width: 70%;
+  }
+
+  .got-logo--big,
+  .got-logo--small {
+    width: 100%;
+  }
+
+  .got-logo--small {
+    display: none;
+  }
+
+  /*  ╔═══════════════════════════════════════╗ */
+  /*    AWARDS                                  */
+  /* ╚═══════════════════════════════════════╝  */
+  .section-awards {
+    min-height: 100vh;
+    background-image: url(https://drive.google.com/uc?export=view&id=1bjrsvpzL959SXT15xkUiOMYuIfD--pG1);
+    background-size: cover;
+  }
+
+  .awards-grid {
+    display: flex;
+    gap: 8rem 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 145rem;
+    padding: 8rem 1rem;
+  }
+
+  .award-img {
+    width: 13%;
+  }
+
+  /*  ╔═══════════════════════════════════════╗ */
+  /*    INFORMATION & SYNOPSIS                  */
+  /* ╚═══════════════════════════════════════╝  */
+  .section-information,
+  .section-synopsis {
+    min-height: 100vh;
+  }
+
+  .readings-container {
+    max-width: 140rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+  }
+
+  .texts-container {
+    width: 40%;
+  }
+
+  .paragraphs-container p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  .author-img,
+  .poster-img {
+    width: 100%;
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .book-img {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 18.7rem;
+  }
+
+  .scrollable-synopsis {
+    height: 55vh;
+    padding-right: 2rem;
+  }
+
+  /*  ╔═══════════════════════════════════════╗ */
+  /*    OUTRO                                   */
+  /* ╚═══════════════════════════════════════╝  */
+  .section-outro {
+    min-height: 100vh;
+    background-image: url(https://drive.google.com/uc?export=view&id=1BG_m-Txnuuroj-bW6Q1aIZ5aCd5EA_3V);
+    background-size: cover;
+  }
+
+  .blockquote {
+    font-size: 3.6rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .blockquote-author {
+    font-size: 2.4rem;
+  }
+
+  /*  ╔═══════════════════════════════════════╗ */
+  /*    HOUSES                                  */
+  /* ╚═══════════════════════════════════════╝  */
+  .section-houses {
+    min-height: 100vh;
+    background-color: #abd1c6;
+  }
+
+  .sigils-container {
+    max-width: 120rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7.1rem 7.6rem;
+  }
+
+  .sigil {
+    background-color: #abd1c6;
+    border: #001e1d solid 0.3rem;
+    fill: #001e1d;
+    border-radius: 1rem;
+    max-width: 17rem;
+  }
+
+  .sigil:hover {
+    box-shadow: rgb(0, 30, 29, 0.16) 0px 3px 6px,
+      rgb(0, 30, 29, 0.23) 0px 3px 6px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .sigil:active {
+    box-shadow: rgb(0, 30, 29, 0.19) 0px 10px 20px,
+      rgb(0, 30, 29, 0.23) 0px 6px 6px;
+  }
+
+  /* MODAL //////////////////////////////////////////////////*/
+  .btn-close {
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: #004643;
+    background-color: #e16162;
+    border: #001e1d solid 0.3rem;
+    box-shadow: rgb(135, 58, 59, 0.6) 9px -11px 9px -4px inset;
+    padding: 1.3rem 2.4rem;
+    border-radius: 0 1.6rem 0 5.65rem;
+    position: absolute;
+    top: -0.3rem;
+    right: -0.3rem;
+    z-index: 1;
+  }
+
+  .btn-close:hover {
+    cursor: pointer;
+    color: #e8e4e6;
+    background-color: #cb5758;
+  }
+
+  .btn-close:active {
+    color: #fffffe;
+    background-color: #e16162;
+  }
+
+  .modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #004643;
+    border: #001e1d solid 0.3rem;
+    border-radius: 1.6rem;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: rgb(0, 30, 29, 0.3) 0px 19px 38px,
+      rgb(0, 30, 29, 0.22) 0px 15px 12px;
+    height: 80vh;
+    width: 80vw;
+    display: none;
+    z-index: 10;
+  }
+
+  .scrollable-modal,
+  .scrollable-info {
+    height: 100%;
+  }
+
+  .modal-inner {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+  }
+
+  .house-description-card,
+  .house-information-card {
+    background-color: #e8e4e6;
+    border: #001e1d solid 0.3rem;
+    border-radius: 1.6rem;
+    padding: 4.8rem;
+    height: 100%;
+  }
+
+  .house-description-card {
+    display: flex;
+    gap: 4.8rem;
+    width: 70%;
+  }
+
+  .banner-container {
+    height: 90%;
+    position: sticky;
+    top: 0;
+  }
+
+  .house-banner {
+    max-height: 90%;
+  }
+
+  .house-banner--mini {
+    display: none;
+    border-radius: 0.8rem;
+  }
+
+  .subheading,
+  .house-name::after {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #0f3433;
+  }
+
+  .subheading--information {
+    background-color: #e8e4e6;
+    text-align: center;
+    padding: 3.2rem 0rem 1.2rem;
+    position: sticky;
+    top: 0;
+    border-bottom: #001e1d solid 1px;
+  }
+
+  .subheading--description,
+  .subheading--members,
+  .subheading--information {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+
+  .main-description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .header-container {
+    padding-top: 4.8rem;
+    padding-bottom: 0.8rem;
+    color: #e8e4e6;
+    position: sticky;
+    top: 0;
+    background-color: #e8e4e6;
+  }
+
+  .house-name {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #001e1d;
+    position: relative;
+  }
+
+  .house-name::after {
+    content: "House";
+    font-size: 1.6rem;
+    letter-spacing: 17%;
+    font-weight: 500;
+    position: absolute;
+    top: -0.8rem;
+    left: 0rem;
+  }
+
+  .description-text {
+    color: #0f3433;
+    text-align: justify;
+    font-size: 1.6rem;
+  }
+
+  .house-members {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .member-img {
+    width: 7rem;
+    border-radius: 100%;
+    border: #001e1d solid 2px;
+  }
+
+  .member-name {
+    color: #004643;
+    font-size: 1.4rem;
+    max-width: 7rem;
+    text-align: center;
+  }
+
+  .house-information-card {
+    padding-top: 0;
+    width: 32%;
+  }
+
+  .row {
+    display: flex;
+    gap: 1.2rem;
+    line-height: 1.6;
+    padding: 0.5rem 0;
+
+    border-bottom: rgb(15, 52, 51, 0.282) solid 1px;
+    align-items: center;
+    color: #0f3433;
+  }
+
+  .row-information-title {
+    font-size: 1.4rem;
+    min-width: 30%;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .row-information {
+    font-size: 1.4rem;
+  }
+
+  /**************************/
+  /* BELOW 1344px (Smaller desktops) */
+  /**************************/
+  @media (max-width: 84em) {
+  }
+
+  .row {
+    gap: 1.6rem;
+  }
+
+  .sigil {
+    width: 14%;
+  }
+
+  .sigils-container {
+    gap: 4.1rem 3.6rem;
+  }
+
+  .secondary-heading--small {
+    margin-bottom: 6.1rem;
+  }
+
+  /**************************/
+  /* BELOW 1200px (Landscape Tablets) */
+  /**************************/
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+    }
+
+    .awards-grid {
+      gap: 7rem;
+    }
+
+    .award-img {
+      width: 16%;
+    }
+
+    .modal-inner {
+      flex-wrap: wrap;
+    }
+
+    .house-description-card,
+    .house-information-card {
+      width: 100%;
+    }
+
+    .row-information-title {
+      min-width: 19%;
+    }
+
+    .house-description-card,
+    .scrollable-info {
+      height: auto;
+    }
+
+    .banner-container {
+      height: 75%;
+    }
+  }
+
+  /* ************************** */
+  /* BELOW 944px (Tablets) */
+  /**************************/
+  @media (max-width: 59em) {
+    html {
+      font-size: 50%;
+    }
+
+    .section-hero {
+      justify-content: center;
+    }
+
+    .got-logo--small {
+      display: block;
+    }
+
+    .got-logo--big {
+      display: none;
+    }
+
+    .award-img {
+      width: 26%;
+    }
+
+    .readings-container {
+      gap: 5rem;
+    }
+
+    .texts-container {
+      width: 100%;
+    }
+
+    .scrollable-synopsis {
+      height: fit-content;
+      line-height: 1.6;
+      overflow-y: auto;
+      padding-right: 0;
+    }
+
+    .image-container {
+      width: 50%;
+    }
+
+    /* For touch screens */
+    .sigil {
+      box-shadow: rgb(0, 30, 29, 0.3) 0px 1px 2px 0px,
+        rgb(0, 30, 29, 0.15) 0px 2px 6px 2px;
+    }
+
+    /* For touch screens */
+    .sigil:active {
+      box-shadow: rgb(0, 30, 29, 0.3) 0px 19px 38px,
+        rgb(0, 30, 29, 0.22) 0px 15px 12px;
+      transition: box-shadow 0.1s;
+    }
+  }
+
+  /**************************/
+  /* BELOW 704px (Smaller tablets) */
+  /**************************/
+  @media (max-width: 44em) {
+    .awards-grid {
+      gap: 7rem;
+    }
+
+    .award-img {
+      width: 25%;
+    }
+
+    .house-description-card {
+      flex-direction: column;
+      gap: 0rem;
+    }
+
+    .house-description-card,
+    .house-information-card {
+      padding: 3.2rem;
+    }
+
+    .house-banner {
+      display: none;
+    }
+
+    .house-banner--mini {
+      display: block;
+      width: 100%;
+    }
+
+    .image-container {
+      width: 100%;
+    }
+  }
+
+  /**************************/
+  /* BELOW 544px (Phones) */
+  /**************************/
+  @media (max-width: 34em) {
+    section {
+      padding: 4.8rem;
+    }
+    .awards-grid {
+      gap: 9rem;
+    }
+
+    .award-img {
+      width: 70%;
+    }
+
+    .modal {
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+
+    .house-description-card,
+    .house-information-card {
+      padding: 2.4rem;
+    }
+
+    .header-container {
+      padding-top: 3.2rem;
+      padding-bottom: 0;
+    }
+
+    .secondary-heading--big {
+      font-size: 3.4rem;
+    }
+
+    .secondary-heading--small {
+      margin-bottom: 5.1rem;
+      font-size: 3rem;
+    }
+
+    .sigil {
+      width: 20%;
+    }
+
+    .sigils-container {
+      gap: 4.1rem 3.6rem;
+    }
+
+    .house-name {
+      font-size: 3.6rem;
+    }
+
+    .blockquote {
+      font-size: 2.4rem;
+    }
+
+    .blockquote-author {
+      font-size: 2rem;
+    }
+  }
