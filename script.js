@@ -1,6 +1,7 @@
 'use strict';
 
 const awardsPath = 'data/awards.json';
+const housesPath = 'data/houses.json';
 
 // Fetch data and insert awards into the DOM
 async function loadAwards() {
@@ -10,7 +11,6 @@ async function loadAwards() {
     const awards = data.awards;
 
     const awardsContainer = document.querySelector('.awards-grid');
-
     // Loop over awards and add each one to the container
     awards.forEach((award) => {
       const awardImg = document.createElement('img');
@@ -27,7 +27,126 @@ async function loadAwards() {
   }
 }
 
-loadAwards();
+// Fetch data and insert sigils info into the DOM
+async function loadSigils() {
+  try {
+    const response = await fetch(housesPath);
+    const data = await response.json();
+    const houses = data.houses;
+
+    const sigilContainer = document.querySelector('.sigils-container');
+    //Loop over houses and add each sigil on the sigils container
+    houses.forEach((house) => {
+      const sigilImg = document.createElement('img');
+      sigilImg.classList.add('sigil');
+      sigilImg.src = house.sigil;
+      sigilImg.alt = `House ${house.name}'s sigil`;
+      sigilImg.addEventListener('click', () => clickedHouse(house.name));
+
+      sigilContainer.appendChild(sigilImg);
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
+// Fetch data and insert sigils info into the DOM
+async function loadHouses() {
+  try {
+    const response = await fetch(housesPath);
+    const data = await response.json();
+    const houses = data.houses;
+
+    const housesSection = document.querySelector('.section-houses');
+
+    //Loop over houses and add each sigil on the sigils container
+    houses.forEach((house) => {
+      const { name, banner, description, members, otherInformation } = house;
+
+      const html = `<div class='modal' id='modal-${name}'>
+      <span class='btn-close' onclick="clickedClose('${name}')">
+        &#10006;
+      </span>
+      <div class='scrollable-area scrollable-modal'>
+        <div class='modal-inner'>
+          <div class='house-description-card scrollable-area scrollable-description'>
+            <div class='banner-container'>
+              <img
+                class='house-banner'
+                src=${banner.large}
+                alt="House ${name}'s banner"
+              />
+              <img
+                class='house-banner--mini'
+                src=${banner.mini}
+                alt="House ${name}'s Banner"
+              />
+            </div>
+
+            <div class='main-description-box'>
+              <div class='header-container'>
+                <p class='house-name'>${name}</p>
+              </div>
+              <div class='description-container'>
+                <h3 class='subheading subheading--description'>Description</h3>
+                <p class='description-text'>
+                  ${description}
+                </p>
+              </div>
+
+              <div class='members-container'>
+                <h3 class='subheading subheading--members'>Notable Members</h3>
+                <div class='house-members'>
+                  ${members
+                    .map(
+                      (member) =>
+                        `<div class='member'>
+                      <img
+                        class='member-img'
+                        src=${member.image}
+                        alt=${member.name}
+                      />
+                      <span class='member-name'>${member.name}</span>
+                    </div>`
+                    )
+                    .join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='house-information-card scrollable-area scrollable-info'>
+            <h3 class='subheading subheading--information'>
+              Other Information
+            </h3>
+            <div class='information-container'>
+              ${Object.entries(otherInformation)
+                .map(
+                  ([key, value]) => `
+                  <div class='row'>
+                    <h3 class='row-information-title'>
+                      ${
+                        key.replace(/([A-Z])/g, ' $1') // add space before capital letters
+                        // https://stackoverflow.com/questions/5582228/insert-space-before-capital-letters
+                      } 
+                    </h3>
+                    <p class='row-information'>
+                      ${Array.isArray(value) ? value.join(', ') : value}
+                    </p>
+                  </div>`
+                )
+                .join('')}
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+      housesSection.insertAdjacentHTML('afterbegin', html);
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+}
 
 ScrollReveal({
   distance: '60px',
@@ -100,12 +219,20 @@ function clickedClose(house) {
   document.querySelector('body').style.overflow = 'visible';
   document.querySelector('html').style.overflow = 'visible';
 
-  document.getElementsByClassName('sigil').style.pointerEvents = 'auto';
+  document
+    .querySelectorAll('.sigil')
+    .forEach((sigil) => (sigil.style.pointerEvents = 'auto'));
 }
 
 function clickedHouse(house) {
   document.getElementById('modal-' + house).style.display = 'block';
   document.querySelector('body').style.overflow = 'hidden';
   document.querySelector('html').style.overflow = 'hidden';
-  document.getElementsByClassName('sigil').style.pointerEvents = 'none';
+  document
+    .querySelectorAll('.sigil')
+    .forEach((sigil) => (sigil.style.pointerEvents = 'none'));
 }
+
+loadAwards();
+loadHouses();
+loadSigils();

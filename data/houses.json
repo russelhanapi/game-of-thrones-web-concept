@@ -1,0 +1,522 @@
+{
+  "houses": [
+    {
+      "name": "arryn",
+      "sigil": "images/house-sigils/arryn.svg",
+      "banner": {
+        "large": "images/house-banners/banner-arryn.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/6/67/Arryn_flag.png"
+      },
+      "description": "House Arryn of the Eyrie is the ruling house of the Vale. The main seat is at the Eyrie, but they have many other holdings. They alternate between the castles of the Eyrie (during spring and summer) and the Gates of the Moon (after the snow starts falling).",
+      "members": [
+        {
+          "name": "John Arryn",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/1/18/Jon_Arryn_HS.png?width=325"
+        },
+        {
+          "name": "Lysa Arryn",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/f/f7/Lysa_Arryn.png?width=325"
+        },
+        {
+          "name": "Robin Arryn",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/8/8a/Rob_Arryn_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A white falcon volant and crescent moon on a blue field",
+        "words": "\"As High as Honor\"",
+        "titles": [
+          "Lord of the Eyrie",
+          "Defender of the Vale",
+          "Warden of the East",
+          "King of Mountain and Vale (pre-Conquest)"
+        ],
+        "seat": "Eyrie",
+        "region": "Vale of Arryn",
+        "head": "Lord Robin Arryn",
+        "overlord": [
+          "King of the Andals and the First Men",
+          "House Stark (303-305 AC)",
+          "House Baratheon of King's Landing (280-303 AC)",
+          "House Targaryen (1-279 AC)"
+        ],
+        "vassals": [
+          "House Baelish",
+          "House Belmore",
+          "House Corbray",
+          "House Egen",
+          "House Hunter",
+          "House Lynderly",
+          "House Moore",
+          "House Royce",
+          "House Waynwood"
+        ],
+        "religion": "Faith of the Seven",
+        "founded": "Andal Invasion (by Artys Arryn)"
+      }
+    },
+    {
+      "name": "baratheon",
+      "sigil": "images/house-sigils/baratheon.svg",
+      "banner": {
+        "large": "images/house-banners/banner-baratheon.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Baratheon_Flag.jpg"
+      },
+      "description": "House Baratheon of Storm's End is one of the Great Houses of Westeros, and is the principal house in the stormlands, which they rule as Lords Paramount of the Stormlands. Their seat, Storm's End, is an ancient castle raised by the Storm Kings from the now-extinct House Durrandon.",
+      "members": [
+        {
+          "name": "Robert Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/e/e2/Robert_B_HS.png?width=325"
+        },
+        {
+          "name": "Cersei Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/d/d4/Cersei_HS.png?width=325"
+        },
+        {
+          "name": "Joffrey Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/e/eb/Joffrey_HS.png?width=325"
+        },
+        {
+          "name": "Myrcella Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/7/7e/Myrcella_HS.png?width=325"
+        },
+        {
+          "name": "Tommen Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/44/Tommen_HS.png?width=325"
+        },
+        {
+          "name": "Stannis Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/a/a4/Stannis_HS.png?width=325"
+        },
+        {
+          "name": "Renly Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/ce/Renly_HS.png?width=325"
+        },
+        {
+          "name": "Gendry Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/7/75/Gendry_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A crowned black stag salient on a gold field",
+        "words": "\"Ours is the Fury\"",
+        "titles": [
+          "Lord of Storm's End",
+          "Lord Paramount of the Stormlands",
+          "Warden of the South (from 305 AC)"
+        ],
+        "seat": "Storm's End",
+        "region": "Stormlands",
+        "head": "Lord Gendry Baratheon",
+        "overlord": [
+          "King of the Andals and the First Men",
+          "House Baratheon of King's Landing (280-298 AC)",
+          "House Targaryen (2 BC-279 AC)"
+        ],
+        "vassals": [
+          "House Caron",
+          "House Connington",
+          "House Dondarrion",
+          "House Errol",
+          "House Estermont",
+          "House Fell",
+          "House Grandison",
+          "House Lonmouth",
+          "House Morrigen",
+          "House Musgood",
+          "House Peasebury",
+          "House Penrose",
+          "House Seaworth",
+          "House Selmy",
+          "House Swann",
+          "House Tarth",
+          "House Trant",
+          "House Toyne",
+          "House Wylde"
+        ],
+        "religion": "Faith of the Seven",
+        "founded": "2 B.C. (by Orys Baratheon)"
+      }
+    },
+    {
+      "name": "greyjoy",
+      "sigil": "images/house-sigils/greyjoy.svg",
+      "banner": {
+        "large": "images/house-banners/banner-greyjoy.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/9/91/Greyjoy_Flag.jpg"
+      },
+      "description": "House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron Islands, a harsh and bleak collection of forbidding islands off the west coast of Westeros, from the Seastone Chair in the castle of Pyke on the island of the same name. The head of the family is traditionally known as the Lord Reaper of Pyke.",
+      "members": [
+        {
+          "name": "Balon Greyjoy",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/0/09/Balon_HS.png?width=325"
+        },
+        {
+          "name": "Yara Greyjoy",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/40/Yara_G_HS.png?width=325"
+        },
+        {
+          "name": "Theon Greyjoy",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/2/22/Theon_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A gold kraken on a black field",
+        "words": "\"We Do Not Sow\"",
+        "titles": [
+          "Lord of the Iron Islands",
+          "King of Salt and Rock",
+          "Son of the Sea Wind",
+          "Lord Reaper of Pyke"
+        ],
+        "seat": "Pyke",
+        "region": "Iron Islands",
+        "head": "Lady Yara Greyjoy",
+        "overlord": [
+          "King of the Andals and the First Men",
+          "House Baratheon of King's Landing (280-299 AC)",
+          "House Targaryen (1-280 AC)",
+          "House Hoare (pre-Conquest)"
+        ],
+        "vassals": [
+          "House Blacktyde",
+          "House Botley",
+          "House Drumm",
+          "House Goodbrother",
+          "House Harlaw",
+          "House Humble",
+          "House Merlyn",
+          "House Sparr"
+        ],
+        "religion": "Drowned God"
+      }
+    },
+    {
+      "name": "lannister",
+      "sigil": "images/house-sigils/lannister.svg",
+      "banner": {
+        "large": "images/house-banners/banner-lannister.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/7/71/Lannister_Flag.jpg"
+      },
+      "description": "House Lannister of Casterly Rock is one of the Great Houses of Seven Kingdoms, and the principal house of the westerlands. Their seat is Casterly Rock, though another branch exists in nearby Lannisport. Their official motto is 'Hear Me Roar!' However, their unofficial motto, equally well known, is 'A Lannister always pays his debts.' The Warden of the West is a Lannister by tradition. Their gold mines have made the Lannisters the wealthiest of the Great Houses.",
+      "members": [
+        {
+          "name": "Tywin Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/f/f9/Tywin_HS.png?width=325"
+        },
+        {
+          "name": "Kevan Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/5e/Kevan_HS.png?width=325"
+        },
+        {
+          "name": "Cersei Baratheon",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/d/d4/Cersei_HS.png?width=325"
+        },
+        {
+          "name": "Jaime Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/6/60/Jaime_HS.png?width=325"
+        },
+        {
+          "name": "Tyrion Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/52/Tyrion_HS.png?width=325"
+        },
+        {
+          "name": "Lancel Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/42/Lancel_HS.png?width=325"
+        },
+        {
+          "name": "Alton Lannister",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/55/Alton_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A golden lion rampant on a crimson field",
+        "words": "Hear Me Roar!",
+        "titles": [
+          "Lord of Casterly Rock",
+          "Shield of Lannisport",
+          "Warden of the West",
+          "Queen of the Andals and the First Men (303-305 AC)",
+          "Protector of the Seven Kingdoms (303-305 AC)",
+          "King of the Rock (pre-Conquest)"
+        ],
+        "seat": "Casterly Rock",
+        "region": "Westerlands",
+        "head": "Lord Tyrion Lannister",
+        "overlord": [
+          "King of the Andals and the First Men",
+          "House Baratheon of King's Landing (280-303 AC)",
+          "House Targaryen (1-280 AC)"
+        ],
+        "vassals": [
+          "House Clegane",
+          "House Crakehall",
+          "House Greenfield",
+          "House Hetherspoon",
+          "House Lannister of Lannisport",
+          "House Lefford",
+          "House Lorch",
+          "House Marbrand",
+          "House Payne",
+          "House Reyne",
+          "House Sarsfield",
+          "House Serrett",
+          "House Swyft",
+          "House Tarbeck",
+          "House Westerling",
+          "House Yarwyck"
+        ],
+        "religion": "Faith of the Seven"
+      }
+    },
+    {
+      "name": "martell",
+      "sigil": "images/house-sigils/martell.svg",
+      "banner": {
+        "large": "images/house-banners/banner-martell.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/2/28/Martell_Flag.jpg"
+      },
+      "description": "House Nymeros Martell of Sunspear, usually simply called House Martell, is one of the Great Houses of the Seven Kingdoms and the ruling house of Dorne. 'Nymeros' indicates 'of the line of Nymeria,' referring to the union of the Martells with the Rhoynish warrior queen Nymeria around 700 BC. The Prince of Dorne rules from Sunspear in southeastern Dorne.",
+      "members": [
+        {
+          "name": "Doran Martell",
+          "image": "https://pbs.twimg.com/profile_images/849380030174158849/DlvP4haG_400x400.jpg"
+        },
+        {
+          "name": "Oberyn Martell",
+          "image": "https://tv-fanatic-res.cloudinary.com/iu/s--oN3I38ym--/c_scale,f_auto,h_696,q_auto,w_696/v1401302077/prince-oberyn-martell"
+        },
+        {
+          "name": "Trystane Martell",
+          "image": "https://pm1.narvii.com/6078/6b84430279d601f8beb0b4f3be8479d757407b7a_hq.jpg"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A red sun pierced by a gold spear on an orange field",
+        "words": "Unbowed, Unbent, Unbroken",
+        "titles": ["Prince of Dorne", "Lord of Sunspear"],
+        "seat": "Sunspear",
+        "region": "Dorne",
+        "head": "Prince Martell",
+        "overlord": [
+          "King of the Andals and the First Men",
+          "House Baratheon of King's Landing (280-303 AC)",
+          "House Targaryen (179-280 AC)"
+        ],
+        "vassals": [
+          "House Allyrion",
+          "House Blackmont",
+          "House Dalt",
+          "House Dayne",
+          "House Gargalen",
+          "House Jordayne",
+          "House Manwoody",
+          "House Qorgyle",
+          "House Santagar",
+          "House Uller",
+          "House Yronwood"
+        ],
+        "religion": "Faith of the Seven"
+      }
+    },
+    {
+      "name": "stark",
+      "sigil": "images/house-sigils/stark.svg",
+      "banner": {
+        "large": "images/house-banners/banner-stark.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Stark_flag.png"
+      },
+      "description": "House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble house of the north. In days of old they ruled as Kings of Winter, but since Aegon's Conquest they have been Wardens of the North and ruled as Lords of Winterfell. Their seat, Winterfell, is an ancient castle renowned for its strength.",
+      "members": [
+        {
+          "name": "Eddard Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/b/be/Eddard_HS.png?width=325"
+        },
+        {
+          "name": "Catelyn Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/9/92/Catelyn_HS.png?width=325"
+        },
+        {
+          "name": "Robb Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/2/2e/Robb_HS.png?width=325"
+        },
+        {
+          "name": "Sansa Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/b/b7/Sansa_HS.png?width=325"
+        },
+        {
+          "name": "Arya Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/1/1e/Arya_HS.png?width=325"
+        },
+        {
+          "name": "Bran Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/c3/Bran_HS.png?width=325"
+        },
+        {
+          "name": "Rickon Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/9/9e/Rickon_HS.png?width=325"
+        },
+        {
+          "name": "Jon Snow",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/7/76/Jon_Snow_HS.png?width=325"
+        },
+        {
+          "name": "Benjen Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/cb/Benjen_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A grey direwolf's head facing sinister on a white field and a green base",
+        "words": "Winter Is Coming",
+        "titles": [
+          "King in the North",
+          "Lord of Winterfell",
+          "Warden of the North (formerly)"
+        ],
+        "seat": "Winterfell",
+        "region": "North",
+        "head": "Queen Sansa Stark",
+        "heir": "Princess Arya Stark",
+        "overlords": [
+          "House Baratheon of King's Landing (280-298 AC)",
+          "House Targaryen (1-280 AC)"
+        ],
+        "vassals": [
+          "House Bolton",
+          "House Cassel",
+          "House Cerwyn",
+          "House Dormund",
+          "House Dustin",
+          "House Flint",
+          "House Glover",
+          "House Hornwood",
+          "House Karstark",
+          "House Manderly",
+          "House Mazin",
+          "House Mollen",
+          "House Mormont",
+          "House Poole",
+          "House Reed",
+          "House Ryswell",
+          "House Tallhart",
+          "House Umber"
+        ],
+        "religion": "Old Gods of the Forest",
+        "cadetBranch": "House Karstark",
+        "founded": "Age of Heroes by Bran the Builder",
+        "weapon": "Ice (destroyed)"
+      }
+    },
+    {
+      "name": "tully",
+      "sigil": "images/house-sigils/tully.svg",
+      "banner": {
+        "large": "images/house-banners/banner-tully.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tully_Flag.png"
+      },
+      "description": "House Tully of Riverrun is one of the Great Houses of Westeros and the principal house of the Riverlands. They are known for their stronghold, Riverrun, located along the Red Fork of the Trident. Their sigil is a silver trout leaping on a blue-green field, and their motto is 'Family, Duty, Honor.' The Tullys are renowned for their strong sense of family and loyalty, especially to the people of the Riverlands.",
+      "members": [
+        {
+          "name": "Catelyn Stark",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/9/92/Catelyn_HS.png?width=325"
+        },
+        {
+          "name": "Edmure Tully",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/f/f3/Edmure_HS.png?width=325"
+        },
+        {
+          "name": "Brynden Tully",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/9/9e/Brynden_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A silver trout leaping on a blue-green field",
+        "words": "Family, Duty, Honor",
+        "titles": [
+          "Lord of Riverrun",
+          "Lord Paramount of the Riverlands",
+          "Warden of the Riverlands"
+        ],
+        "seat": "Riverrun",
+        "region": "Riverlands",
+        "head": "Edmure Tully",
+        "overlords": [
+          "House Baratheon of King's Landing (280-303 AC)",
+          "House Targaryen (1-280 AC)"
+        ],
+        "vassals": [
+          "House Blackwood",
+          "House Bracken",
+          "House Frey",
+          "House Mallister",
+          "House Tully (Cadet Branch)"
+        ],
+        "religion": "Faith of the Seven",
+        "founded": "Age of Heroes (by the Tullys)",
+        "diedOut": "Destroyed during the War of the Five Kings"
+      }
+    },
+    {
+      "name": "tyrell",
+      "sigil": "images/house-sigils/tyrell.svg",
+      "banner": {
+        "large": "images/house-banners/banner-tyrell.png",
+        "mini": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Tyrell_Flag.jpg/1200px-Tyrell_Flag.jpg"
+      },
+      "description": "House Tyrell of Highgarden is one of the Great Houses of the Seven Kingdoms, being Lords Paramount of the Mander and the liege lords of the Reach. A large, wealthy house, its wealth is only surpassed among the Great Houses by House Lannister, and the Tyrells can field the greatest armies. Additionally, if they call the ships of the Redwyne fleet, the lords of the Shield Islands, and the coastal lords, they can command a navy that equals if not surpasses the royal fleet of King's Landing.",
+      "members": [
+        {
+          "name": "Margaery Tyrell",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/1/1b/Margaery_HS.png?width=325"
+        },
+        {
+          "name": "Loras Tyrell",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/e/e5/Loras_HS.png?width=325"
+        },
+        {
+          "name": "Olenna Tyrell",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/e/e7/Olenna_HS.png?width=325"
+        }
+      ],
+      "otherInformation": {
+        "coatOfArms": "A golden rose on a green field",
+        "words": "Growing Strong",
+        "titles": [
+          "Lord of Highgarden",
+          "Lord Paramount of the Reach",
+          "Warden of the South",
+          "High Steward of Highgarden (pre-Conquest)"
+        ],
+        "seat": "Highgarden",
+        "region": "Reach",
+        "head": "Prince Martell",
+        "overlords": [
+          "House Baratheon of King's Landing (280-303 AC)",
+          "House Targaryen (1-280 AC, 304 AC)",
+          "House Gardener (pre-Conquest)"
+        ],
+        "vassals": [
+          "House Ashford",
+          "House Caswell",
+          "House Florent",
+          "House Fossoway of Cider Hall",
+          "House Fossoway of New Barrel",
+          "House Hastwyck",
+          "House Hightower",
+          "House Inchfield",
+          "House Leygood",
+          "House Merryweather",
+          "House Mullendore",
+          "House Oakheart",
+          "House Redwyne",
+          "House Rhysling",
+          "House Rowan",
+          "House Tarly"
+        ],
+        "religion": "Faith of the Seven",
+        "founded": "Andal Invasion (by Alester Tyrell)",
+        "diedOut": "304 A.C. Sack of Highgarden"
+      }
+    }
+  ]
+}
