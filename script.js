@@ -1,80 +1,111 @@
+'use strict';
+
+const awardsPath = 'data/awards.json';
+
+// Fetch data and insert awards into the DOM
+async function loadAwards() {
+  try {
+    const response = await fetch(awardsPath);
+    const data = await response.json();
+    const awards = data.awards;
+
+    const awardsContainer = document.querySelector('.awards-grid');
+
+    // Loop over awards and add each one to the container
+    awards.forEach((award) => {
+      const awardImg = document.createElement('img');
+      awardImg.classList.add('award-img');
+      awardImg.src = award.src;
+      awardImg.alt = award.alt;
+
+      awardsContainer.appendChild(awardImg);
+    });
+  } catch (error) {
+    console.error('Failed to load awards:', error);
+    document.querySelector('.awards-grid').innerHTML =
+      '<p>Error loading awards.</p>';
+  }
+}
+
+loadAwards();
+
 ScrollReveal({
-  distance: "60px",
+  distance: '60px',
   duration: 2500,
   delay: 200,
 });
 
-ScrollReveal().reveal(".logo-container", {
+ScrollReveal().reveal('.logo-container', {
   delay: 1500,
-  origin: "bottom",
+  origin: 'bottom',
 });
 
-ScrollReveal().reveal(".award-img", {
-  origin: "bottom",
+ScrollReveal().reveal('.award-img', {
+  origin: 'bottom',
   interval: 200,
-  easing: "ease-out",
+  easing: 'ease-out',
   duration: 1500,
 });
 
-ScrollReveal().reveal(".author-img", {
-  origin: "top",
+ScrollReveal().reveal('.author-img', {
+  origin: 'top',
 });
 
-ScrollReveal().reveal(".paragraphs-container, .scrollable-synopsis", {
-  origin: "bottom",
+ScrollReveal().reveal('.paragraphs-container, .scrollable-synopsis', {
+  origin: 'bottom',
 });
 
 ScrollReveal().reveal(
-  "#heading-information, .poster-img, .secondary-heading--small",
+  '#heading-information, .poster-img, .secondary-heading--small',
   {
-    origin: "left",
+    origin: 'left',
   }
 );
 
-ScrollReveal().reveal(".book-img, #heading-synopsis", {
-  origin: "right",
+ScrollReveal().reveal('.book-img, #heading-synopsis', {
+  origin: 'right',
 });
 
-ScrollReveal().reveal(".sigil", {
+ScrollReveal().reveal('.sigil', {
   delay: 0,
-  origin: "top",
-  interval: "200",
+  origin: 'top',
+  interval: '200',
 });
 
-ScrollReveal().reveal(".blockquote:nth-child(1)", {
+ScrollReveal().reveal('.blockquote:nth-child(1)', {
   delay: 500,
-  origin: "bottom",
+  origin: 'bottom',
 });
 
-ScrollReveal().reveal(".blockquote:nth-child(2)", {
+ScrollReveal().reveal('.blockquote:nth-child(2)', {
   delay: 3000,
-  origin: "top",
-  distance: "20px",
+  origin: 'top',
+  distance: '20px',
 });
 
-ScrollReveal().reveal(".blockquote:nth-child(3)", {
-  distance: "0px",
+ScrollReveal().reveal('.blockquote:nth-child(3)', {
+  distance: '0px',
   delay: 6300,
   duration: 3800,
 });
 
-ScrollReveal().reveal(".blockquote:nth-child(4)", {
-  distance: "0px",
+ScrollReveal().reveal('.blockquote:nth-child(4)', {
+  distance: '0px',
   delay: 8000,
   duration: 1000,
 });
 
 function clickedClose(house) {
-  document.getElementById("modal-" + house).style.display = "none";
-  document.querySelector("body").style.overflow = "visible";
-  document.querySelector("html").style.overflow = "visible";
+  document.getElementById('modal-' + house).style.display = 'none';
+  document.querySelector('body').style.overflow = 'visible';
+  document.querySelector('html').style.overflow = 'visible';
 
-  document.getElementsByClassName("sigil").style.pointerEvents = "auto";
+  document.getElementsByClassName('sigil').style.pointerEvents = 'auto';
 }
 
 function clickedHouse(house) {
-  document.getElementById("modal-" + house).style.display = "block";
-  document.querySelector("body").style.overflow = "hidden";
-  document.querySelector("html").style.overflow = "hidden";
-  document.getElementsByClassName("sigil").style.pointerEvents = "none";
+  document.getElementById('modal-' + house).style.display = 'block';
+  document.querySelector('body').style.overflow = 'hidden';
+  document.querySelector('html').style.overflow = 'hidden';
+  document.getElementsByClassName('sigil').style.pointerEvents = 'none';
 }
