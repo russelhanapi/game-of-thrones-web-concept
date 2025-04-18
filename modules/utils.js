@@ -43,39 +43,49 @@ export function createHouseModals(house) {
       </div>`
     )
     .join('');
-  return ` 
+
+  const modalHtml = ` 
     <div class='modal' id='modal-${name}'>
-      <span class='btn-close' onclick="clickedClose(${name})"}>
+        <span class='btn-close'>
         &#10006;
-      </span>
-      <div class='scrollable-area scrollable-modal'>
-        <div class='modal-inner'>
-          <div class='house-description-card scrollable-area scrollable-description'>
-            <div class='banner-container'>
-              <img class='house-banner' src=${banner.large} alt="House ${name}'s banner"/>
-              <img class='house-banner--mini' src=${banner.mini} alt="House ${name}'s banner"/>
+        </span>
+        <div class='scrollable-area scrollable-modal'>
+            <div class='modal-inner'>
+            <div class='house-description-card scrollable-area scrollable-description'>
+                <div class='banner-container'>
+                <img class='house-banner' src=${banner.large} alt="House ${name}'s banner"/>
+                <img class='house-banner--mini' src=${banner.mini} alt="House ${name}'s banner"/>
+                </div>
+                <div class='main-description-box'>
+                <div class='header-container'>
+                    <p class='house-name'>${name}</p>
+                </div>
+                <div class='description-container'>
+                    <h3 class='subheading subheading--description'>Description</h3>
+                    <p class='description-text'>${description}</p>
+                </div>
+                <div class='members-container'>
+                    <h3 class='subheading subheading--members'>Notable Members</h3>
+                    <div class='house-members'>${membersHtml}</div>
+                </div>
+                </div>
             </div>
-            <div class='main-description-box'>
-              <div class='header-container'>
-                <p class='house-name'>${name}</p>
-              </div>
-              <div class='description-container'>
-                <h3 class='subheading subheading--description'>Description</h3>
-                <p class='description-text'>${description}</p>
-              </div>
-              <div class='members-container'>
-                <h3 class='subheading subheading--members'>Notable Members</h3>
-                <div class='house-members'>${membersHtml}</div>
-              </div>
+            <div class='house-information-card scrollable-area scrollable-info'>
+                <h3 class='subheading subheading--information'>Other Information</h3>
+                <div class='information-container'>${otherInfoHtml}</div>
             </div>
-          </div>
-          <div class='house-information-card scrollable-area scrollable-info'>
-            <h3 class='subheading subheading--information'>Other Information</h3>
-            <div class='information-container'>${otherInfoHtml}</div>
-          </div>
-        </div>
+            </div>
       </div>
     </div>`;
+
+  const modalContainer = document.createElement('div');
+  modalContainer.innerHTML = modalHtml;
+  document.body.appendChild(modalContainer);
+
+  const closeButton = modalContainer.querySelector('.btn-close');
+  closeButton.addEventListener('click', () => clickedClose(name));
+
+  return modalContainer;
 }
 
 function clickedClose(house) {
